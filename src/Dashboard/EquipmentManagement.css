@@ -1,0 +1,498 @@
+/* Back Button */
+/* EquipmentManagement.css */
+
+
+/* EquipmentManagement.css */
+
+.equipment-management {
+  padding: 20px;
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin: 0 5px; /* Space between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 120px;
+}
+
+.tab-button.active {
+  background-color: #4CAF50; /* Green background for active tab */
+  color: white; /* White text for active tab */
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tab-button.inactive {
+  background-color: #f0f0f0; /* Grey background for inactive tab */
+  color: #666; /* Dark text for inactive tab */
+}
+
+.tab-button.inactive:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  color: #333;
+}
+
+.tab-content-container {
+  height: 600px; /* Fixed height */
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.auto-tracking-label {
+  display: flex;
+  align-items: left; /* Aligns text and checkbox vertically */
+/*  gap: 10px; /* Adds space between text and checkbox */
+  font-weight: bold; /* Optional: Makes text bold */
+}
+
+.auto-tracking-text {
+  font-size: 15px; /* Adjust size as needed */
+  
+}
+
+
+.auto-tracking-container label {
+  display: flex;
+  align-items: center; /* Ensures the text and checkbox are vertically aligned */
+  gap: 1px; /* Adds spacing between text and checkbox */
+  font-weight: bold;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group label {
+  min-width: 150px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0px;
+}
+
+.list-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.status-badge.online {
+  background-color: green;
+}
+
+.status-badge.offline {
+  background-color: red;
+}
+
+.status-badge.error {
+  background-color: orange;
+}
+
+.status-badge.active {
+  background-color: green;
+}
+
+.status-badge.inactive {
+  background-color: red;
+}
+
+.status-badge.maintenance {
+  background-color: orange;
+}
+
+.edit-button, .delete-button, .submit-button, .cancel-button, .button1 {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+.submit-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.tab-content-container {
+  height: 600px; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add padding */
+}
+
+
+
+.list-container {
+  overflow-x: auto; /* Enable horizontal scrolling for tables if needed */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.status-badge.online {
+  background-color: green;
+}
+
+.status-badge.offline {
+  background-color: red;
+}
+
+.status-badge.error {
+  background-color: orange;
+}
+
+.status-badge.active {
+  background-color: green;
+}
+
+.status-badge.inactive {
+  background-color: red;
+}
+
+.status-badge.maintenance {
+  background-color: orange;
+}
+
+.edit-button, .delete-button, .submit-button, .cancel-button, .button1 {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #de4f42;
+  color: white;
+}
+
+.submit-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+
+
+.back-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4169E1; /* Theme color */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #fff; /* White for table rows */
+  }
+
+
+  
+  
+  
+ 
+  
+  .tab-content-container {
+    height: 600px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* General Styles */
+  .equipment-management {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+p1{
+  text-align: left;
+}
+
+  .form-group {
+    margin-bottom: 15px;
+    align-items: flex-start;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .cancel-button {
+    
+    background-color: #c0392b;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Table Styles */
+  .list-container {
+    margin-bottom: 30px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #34495e;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Status Badges */
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .status-badge.online {
+    background-color: #2ecc71;
+  }
+  
+  .status-badge.offline {
+    background-color: #e74c3c;
+  }
+  
+  .status-badge.error {
+    background-color: #f1c40f;
+  }
+  
+  .status-badge.active {
+    background-color: #2ecc71;
+  }
+  
+  .status-badge.inactive {
+    background-color: #e74c3c;
+  }
+  
+  .status-badge.maintenance {
+    background-color: #f1c40f;
+  }
+  
+  /* Action Buttons */
+  .edit-button,
+  .delete-button,
+  .button1
+ {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  .edit-button {
+    background-color: #3498db;
+    color: white;
+  }
+
+  .button1 {
+    background-color: #0f1317;
+    color: white;
+  }
+
+ 
+  
+  .edit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .delete-button {
+    background-color: #de453a;
+    color: white;
+  }
+  
+ 
+
+  .button1 {
+    background-color: #696a6b;
+    color: rgb(18, 16, 16);
+  }

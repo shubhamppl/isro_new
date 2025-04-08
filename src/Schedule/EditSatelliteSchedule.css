@@ -1,0 +1,294 @@
+editschedule.css
+ 
+/* Note: Top Navigation CSS remains unchanged per your request */
+ 
+/* Dashboard container */
+.dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+
+th {
+    background-color: #4169E1; /* Theme color */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+   
+  /* Search Section */
+  .search-section {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+   
+  .search-input {
+    padding: 10px;
+    width: 1320px; /* Enlarged search box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+   
+  .add-schedule-btn {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  .add-schedule-btn:hover {
+    background-color: #45a049;
+  }
+   
+  /* Table Section */
+  .table-container2 {
+    overflow-x: auto;
+    min-height: 83%;
+  }
+   
+  .table-container2 table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+   
+  .table-container2 th,
+  .table-container2 td {
+    padding: 12px;
+    text-align: left;
+    
+    border: 1px solid #ddd;
+  }
+   
+  .table-container2 th {
+    background-color: #4169E1;
+  }
+   
+  .table-container2 tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+   
+  .table-container2 tr:hover {
+    background-color: #f1f1f1;
+  }
+   
+  .table-container2 button {
+    padding: 6px 10px;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  .table-container2 button:hover {
+    background-color: #007bb5;
+  }
+   
+  /* Enhanced Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+   
+  .modal-content {
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+  }
+   
+  .modal-content h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e9ecef;
+  }
+   
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   
+  .modal-content label {
+    font-weight: bold;
+  }
+   
+  .modal-content input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   
+  .modal-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  .modal-content button:first-of-type {
+    background-color: #4caf50;
+    color: #fff;
+  }
+   
+  .modal-content button:last-of-type {
+    background-color: #f44336;
+    color: #fff;
+  }
+   
+  .edit-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 15px;
+  }
+   
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+   
+  .form-group label {
+    font-weight: 500;
+    color: #495057;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+   
+  .form-group input {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+   
+  .form-group input:hover {
+    border-color: #adb5bd;
+  }
+   
+  .form-group input:focus {
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.15);
+    outline: none;
+  }
+   
+  .modal-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e9ecef;
+  }
+   
+  .save-btn, .cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.3s ease;
+  }
+   
+  .save-btn {
+    background-color: #228be6;
+    color: white;
+  }
+   
+  .save-btn:hover {
+    background-color: #1c7ed6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  .cancel-btn {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+   
+  .cancel-btn:hover {
+    background-color: #dee2e6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+   
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+   
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .edit-form-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+   
+  @media (max-width: 768px) {
+    .edit-form-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+
+  
+   
+  @media (max-width: 576px) {
+    .edit-form-grid {
+      grid-template-columns: 1fr;
+    }
+   
+    .modal-content {
+      padding: 1.5rem;
+    }
+   
+    .modal-buttons {
+      flex-direction: column;
+    }
+   
+    .save-btn, .cancel-btn {
+      width: 100%;
+    }
+  }
